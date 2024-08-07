@@ -21,6 +21,7 @@
     .nav-link.open{
         left: 0%;
         transition: 0.5s ease-out;
+        height:80vh;
     }
 
     .nav-link ul{
