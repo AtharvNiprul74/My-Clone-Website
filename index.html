@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-quries.css">
   </head>
   <body>
     <!-- Top bar -->
@@ -21,7 +22,7 @@
                 <img src="./assets/asset 1.png" alt="company logo">
             </a>
             <!-- Navbar -->
-            <div class="nav-links">
+            <div class="nav-link" id="nav-links">
                 <ul class="flex">
                     <li><a href="#" class="hover">Products</a></li>
                     <li><a href="#" class="hover">Customer</a></li>
@@ -31,6 +32,7 @@
                     <li><a href="#" class="hover primary-btn ">Sign up</a></li>
                 </ul>
             </div>
+            <a href="#" class="nav-toggle" id="nav-toggle"><i class="fa-solid fa-bars"></i></a>
         </div>
     </nav>
     <!-- Main container -->
@@ -135,7 +137,7 @@
 
     <!-- big features 2 -->
     <section class="big-features-section">
-        <div class="container flex big-feature" style="flex-direction: row-reverse;">
+        <div class="container flex big-feature big-feature-middle">
             <div class="feature-img">
                 <img src="./assets/asset 21.png" alt="">
             </div>
@@ -245,6 +247,17 @@
         </div>
     </div>
 
+    <!-- Script for fonts -->
     <script src="https://kit.fontawesome.com/1d66a44ce3.js" crossorigin="anonymous"></script>
+    <!-- Script for menu swipe -->
+    <script>
+        const btn=document.getElementById("nav-toggle")
+        const navigation_bar=document.getElementById("nav-links");
+
+        btn.addEventListener('click',() =>{
+            navigation_bar.classList.toggle('open')
+        })
+        
+    </script>
   </body>
 </html>
